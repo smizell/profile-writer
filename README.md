@@ -2,6 +2,8 @@
 
 The goal of this library is to make it easier to write ALPS documents that can be distributed as a website, XML file, or JSON file. Instead of writing XML or JSON directly, write Markdown files and build those files when you're ready to distribute.
 
+Look at the [example directory](./example) to see how this might work.
+
 ## Usage
 
 ```sh
