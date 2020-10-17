@@ -1,0 +1,17 @@
+{
+  "name": "profile-writer",
+  "version": "0.1.0",
+  "description": "The goal of this library is to make it easier to write ALPS documents that can be distributed as a website, XML file, or JSON file. Instead of writing XML or JSON directly, write Markdown files and build those files when you're ready to distribute.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  }
+}
