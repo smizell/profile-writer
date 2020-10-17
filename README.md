@@ -8,6 +8,14 @@ The goal of this library is to make it easier to write ALPS documents that can b
 npm install profile-writer -g
 ```
 
+To build the directory, run:
+
+```sh
+profile-writer build
+```
+
+This will look for a `profile` directory and output to a `build` directory. Look at the commands arguments with `--help` to determine ways to override these defaults.
+
 ## Build
 
 The structure of the ALPS document is determined by the directory and file names. The first part of file name determines the `id` of the descriptor and the extension of the file determines the type of content. Directories provide a way for nesting descriptors.
