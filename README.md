@@ -63,3 +63,25 @@ Building the profile will result in three outputs:
 - HTML version of the entire profile directory
 - XML version of the profile
 - JSON version of the profile
+
+## CLI
+
+### Build the profile
+
+```sh
+profile-writer build --dir ./profile
+```
+
+### Creating new descriptors
+
+This will create a new file for writing in the `docs` directory. It will handle the nesting if applicable.
+
+```sh
+profile-writer new customer/address/street_name
+```
+
+In this example, if `customer/address.md` is a file, this will:
+
+- Create a `customer/address` directory
+- Move `customer/address.md` to be `customer/address/index.md`
+- Create `customer/address/street_name.md`
