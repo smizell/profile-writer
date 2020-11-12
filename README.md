@@ -69,7 +69,7 @@ Building the profile will result in three outputs:
 ### Build the profile
 
 ```sh
-profile-writer build --dir ./profile
+profile-writer build --dir ./profile --format json
 ```
 
 ### Creating new descriptors
@@ -77,11 +77,11 @@ profile-writer build --dir ./profile
 This will create a new file for writing in the `docs` directory. It will handle the nesting if applicable.
 
 ```sh
-profile-writer new customer/address/street_name
+profile-writer new customer/address/street_name --format markdown
 ```
 
 In this example, if `customer/address.md` is a file, this will:
 
 - Create a `customer/address` directory
 - Move `customer/address.md` to be `customer/address/index.md`
-- Create `customer/address/street_name.md`
+- Create `customer/address/street_name.md` with frontmatter
